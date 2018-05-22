@@ -4,7 +4,11 @@
 <script src="jquery-3.3.1.min.js">
 </script>
 <script> 
-	window.location.href = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? "https://www.baidu.com/" :  "http://news.baidu.com/";
+	if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)==true) {
+		alert("请使用电脑打开");
+		window.location.href ="https://www.baidu.com/";
+	}
+	
 
 $(document).ready(function(){
   $("#div1").mousemove(function(){
