@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.3.1.min.js">
+</script>
+<script> 
+
+var a=Math.random()*1000;
+var b=a.toString();
+
+
+$(document).ready(function(){
+  $("#div1").mousemove(function(){
+  	var a=(Math.random()*1000).toString().substr(0,3);
+	var b=(Math.random()*1000).toString().substr(0,3);
+	
+    $("div").animate({
+      left:a,
+      top:b,
+      opacity:'0.5',
+// document.write(b),
+// 	document.write(a)
+    });
+
+  });
+
+});
+</script> 
+<script >
+	body {
+	
+	margin: 0;
+	width:100%;
+	height:100%;
+}
+</script>
+</head>
+ 
+<body style="">
+
+<button>开始动画</button>
+
+<div style="background:#98bf21;height:40px;width:100px;position:absolute; border-radius: 20px;text-align: center;padding-top: 15px; margin: auto; top: 0; left: 500px;right: 0; bottom: 0;" id="div1">
+	不 喜 欢
+</div>
+
+</body>
+</html>
