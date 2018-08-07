@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.3.1.min.js">
+</script>
+<script> 
+  if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)==true) {
+    alert("请使用电脑打开");
+    window.location.href ="https://www.baidu.com/";
+  };
+$(document).ready(function(){
+  $("#div1").mousemove(function(){
+  	var a=(Math.random()*1000).toString().substr(0,3);
+	var b=(Math.random()*1000).toString().substr(0,3);
+	
+    $("#div1").animate({
+      left:a,
+      top:b,
+      opacity:'0.5',
+    });
+
+  });
+
+  $("#div0").click(function(){
+  	alert("哈哈，开心，/捂脸，转圈！");
+  })
+
+});
+</script> 
+<script >
+
+</script>
+</head>
+ 
+<body style="">
+<div style="height:40px;width:300px;position:absolute;padding-top: 15px; border-radius: 20px;text-align: center;left: 47%;  top: 30%;transform: translate(-50%,-50%);color:#98bf21;font-weight:bold;font-size:20px;">那个，你，喜欢我吗？</div>
+
+<div style="background:#98bf21;height:40px;width:100px;position:absolute;padding-top: 15px; border-radius: 20px;text-align: center;left: 40%;    top: 50%;transform: translate(-50%,-50%);color:#fff;" id="div0">
+喜   欢</a></div>&nbsp;&nbsp;&nbsp;&nbsp;
+<div style="background:#98bf21;height:40px;width:100px;position:absolute; border-radius: 20px;text-align: center;padding-top: 15px;left: 55%;
+    top: 50%;transform: translate(-50%,-50%);color:#fff;" id="div1">
+	不 喜 欢
+</div>	
+	
+</body>
+</html>
