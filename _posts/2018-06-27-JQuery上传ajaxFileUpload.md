@@ -7,6 +7,8 @@ categories: JQuery
 tags: [JQuery, JS]
 ---
 
+upload不能放在表单form里面
+
 控制器
 ~~~php
 UploadTravel.php文件
@@ -53,8 +55,6 @@ up.php
 ~~~php
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="/CI_Study/static/ajaxfileupload.js"></script>
-
-
 
 <button class="btn" onclick="addButton($(this))">上传</button>
 
